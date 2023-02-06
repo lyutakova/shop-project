@@ -45,7 +45,31 @@
 
 
 
-let li = document.querySelectorAll('li');
-console.log(li);
+// let li = document.querySelectorAll('li');
+// console.log(li);
 
 // Home work: create local repositorij, create header, upload on github, sent link to Ostap
+
+
+
+//==================
+let title = document.getElementById("title");
+console.log(title);
+
+// let text = document.getElementsByClassName("text");
+// console.log(text);
+
+// let li = document.getElementsByTagName("li");
+// console.log(li);
+
+let text = document.querySelector(".text");
+console.log(text);
+
+let li = document.querySelectorAll("li");
+console.log(li);
+
+
+//=============03.02
+
+console.log(title.hasAttribute('class'));
+console.log(title.hasAttribute('id'));

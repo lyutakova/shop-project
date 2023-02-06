@@ -9,21 +9,19 @@ body {
     background-color: rgb(102, 206, 255);
 }
 
+
 .container {
     width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-header {
-    background-color: red;
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
 }
 
 .row {
     display: flex;
-    margin-left: -15;
-    margin-right: -15;
 }
 
 [class*='col-']{
@@ -42,8 +40,9 @@ header {
 }
 
 .col-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    margin-right: 30px;
 }
 
 .col-4 {
@@ -64,6 +63,9 @@ header {
 .col-8 {
     flex: 0 0 66.66667%;
     max-width: 66.66667%; 
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 } 
 
 .col-9 {
@@ -89,10 +91,17 @@ header {
 
 .product {
 position: flex;
+outline: auto 1px;
+outline-color: white;
+padding: 15px;
+margin-bottom: 15px;
 }
 
 .product-image {
     position: relative;
+    height: auto;
+    width: 100px;
+    margin-bottom: 10px;
 }
 
 .zoom {
@@ -102,3 +111,85 @@ position: flex;
 .like {
     position: absolute;
 }
+.menu {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#menu-list {
+	min-width: 740px;
+	list-style: none;
+	}
+	ul#menu-list li {
+		/* display: inline;
+        font-size: 18px;
+        text-decoration: none; */
+  background-color: #ffffff; 
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	}
+
+.breadcrumbs {
+	display: table;   /* Allow the centering to work */
+	margin: left;
+}
+
+ul#horizontal-list {
+	/* min-width: 696px; */
+	list-style: none;
+	padding-top: 20px;
+   
+	}
+	ul#horizontal-list li {
+		display: inline;
+        margin-right: 10px;
+	}
+
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.product-desc {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.product-features {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button {
+    background-color:  rgb(255, 255, 255, .65); /* Green */
+    border: auto 1px;
+    color: rgb(56, 56, 56);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
+
+  .button:hover {background-color: rgba(228, 237, 242, 0.65)}
+
+.button:active {
+  background-color: rgba(228, 237, 242, 0.65);
+  /* box-shadow: 0 5px #666; */
+  transform: translateY(2px);
+}
+
+  .price {
+    font-size: 22px;
+    font-weight: bold;
+  }
